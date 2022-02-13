@@ -1,0 +1,117 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3581107600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User launch website \"https://rahulshettyacademy.com/AutomationPractice/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://rahulshettyacademy.com/AutomationPractice/",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.user_launch_website(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2884600800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.initializeDriver()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User selects 2nd radio button",
+        "description": "",
+        "id": "verifying-radio-button-selection-and-autosuggestion-selection;user-selects-2nd-radio-button",
+        "after": [
+          {
+            "result": {
+              "duration": 680453300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2243261100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on \"2\"nd radio button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.user_clicks_on_nd_radio_button(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "radio button should be clicked",
+            "match": {
+              "location": "StepDefinitions.radio_button_should_be_clicked()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@regression"
+          },
+          {
+            "line": 9,
+            "name": "@smoke1"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying radio button selection and autosuggestion selection",
+    "description": "",
+    "id": "verifying-radio-button-selection-and-autosuggestion-selection",
+    "keyword": "Feature",
+    "uri": "RadioSuggestion.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@EndtoEndTest"
+      }
+    ]
+  }
+]

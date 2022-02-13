@@ -1,0 +1,10 @@
+@EndtoEndTest
+Feature: Verifying radio button selection and autosuggestion selection
+
+  Background:                                                                      # RadioSuggestion.feature:6
+    Given User launch website "https://rahulshettyacademy.com/AutomationPractice/" # StepDefinitions.user_launch_website(String)
+
+  @regression @smoke1
+  Scenario: User selects 2nd radio button # RadioSuggestion.feature:10
+    And User clicks on "2"nd radio button # StepDefinitions.user_clicks_on_nd_radio_button(int)
+    Then radio button should be clicked   # StepDefinitions.radio_button_should_be_clicked()

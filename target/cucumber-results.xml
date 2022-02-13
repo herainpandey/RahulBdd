@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.389532">
+    <testcase classname="Verifying radio button selection and autosuggestion selection" name="User selects 2nd radio button" time="9.389532">
+        <system-out>
+            <![CDATA[Given User launch website "https://rahulshettyacademy.com/AutomationPractice/".passed
+And User clicks on "2"nd radio button.......................................passed
+Then radio button should be clicked.........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
