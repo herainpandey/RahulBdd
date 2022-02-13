@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3581107600,
+              "duration": 3428346600,
               "status": "passed"
             },
             "line": 7,
@@ -33,7 +33,7 @@
         "before": [
           {
             "result": {
-              "duration": 2884600800,
+              "duration": 4323190900,
               "status": "passed"
             },
             "match": {
@@ -41,14 +41,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "User selects 2nd radio button",
+        "line": 27,
+        "name": "User checking amount as per city",
         "description": "",
-        "id": "verifying-radio-button-selection-and-autosuggestion-selection;user-selects-2nd-radio-button",
+        "id": "verifying-radio-button-selection-and-autosuggestion-selection;user-checking-amount-as-per-city;;2",
         "after": [
           {
             "result": {
-              "duration": 680453300,
+              "duration": 729296600,
               "status": "passed"
             },
             "match": {
@@ -57,47 +57,284 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2243261100,
+              "duration": 108800,
               "status": "passed"
             },
-            "line": 11,
-            "name": "User clicks on \"2\"nd radio button",
+            "line": 22,
+            "name": "Navigate to table \"Web Table Fixed header\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
-                  "offset": 16
+                  "val": "Web Table Fixed header",
+                  "offset": 19
                 }
               ],
-              "location": "StepDefinitions.user_clicks_on_nd_radio_button(int)"
+              "location": "StepDefinitions.navigate_to_table(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 109000,
+              "duration": 467762600,
               "status": "passed"
             },
-            "line": 12,
-            "name": "radio button should be clicked",
+            "line": 23,
+            "name": "fetch amount for \"Kolkata\" and print",
             "match": {
-              "location": "StepDefinitions.radio_button_should_be_clicked()"
+              "arguments": [
+                {
+                  "val": "Kolkata",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.fetch_amount_for_and_print(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 9,
+            "line": 20,
+            "name": "@smoke1"
+          },
+          {
+            "line": 20,
             "name": "@regression"
           },
           {
-            "line": 9,
+            "line": 2,
+            "name": "@EndtoEndTest"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3119050400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User launch website \"https://rahulshettyacademy.com/AutomationPractice/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://rahulshettyacademy.com/AutomationPractice/",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.user_launch_website(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1375588100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.initializeDriver()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User checking amount as per city",
+        "description": "",
+        "id": "verifying-radio-button-selection-and-autosuggestion-selection;user-checking-amount-as-per-city;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 689315500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 195300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Navigate to table \"Web Table Fixed header\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Web Table Fixed header",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.navigate_to_table(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 397123600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "fetch amount for \"Mumbai\" and print",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mumbai",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.fetch_amount_for_and_print(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
             "name": "@smoke1"
+          },
+          {
+            "line": 20,
+            "name": "@regression"
+          },
+          {
+            "line": 2,
+            "name": "@EndtoEndTest"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3120380000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User launch website \"https://rahulshettyacademy.com/AutomationPractice/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://rahulshettyacademy.com/AutomationPractice/",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.user_launch_website(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1634724500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.initializeDriver()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User checking amount as per city",
+        "description": "",
+        "id": "verifying-radio-button-selection-and-autosuggestion-selection;user-checking-amount-as-per-city;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 677765800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 56500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Navigate to table \"Web Table Fixed header\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Web Table Fixed header",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.navigate_to_table(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 403462000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "fetch amount for \"Delhi\" and print",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.fetch_amount_for_and_print(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@smoke1"
+          },
+          {
+            "line": 20,
+            "name": "@regression"
+          },
+          {
+            "line": 2,
+            "name": "@EndtoEndTest"
           }
         ]
       }

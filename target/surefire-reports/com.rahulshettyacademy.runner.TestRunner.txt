@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.rahulshettyacademy.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 9, Time elapsed: 1.826 sec

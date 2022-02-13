@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 13, 2022 06:28:10 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 13, 2022 09:44:47 PM</span>
 				</a>
 			</li>
 			<li>
@@ -91,8 +91,8 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@EndtoEndTest</a></li>
-					<li><a href='#'>@regression</a></li>
 					<li><a href='#'>@smoke1</a></li>
+					<li><a href='#'>@regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -155,7 +155,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -170,7 +170,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -190,44 +190,94 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verifying radio button selection and autosuggestion selection</span>
-						<span class='test-time'>Feb 13, 2022 06:28:10 PM</span>
+						<span class='test-time'>Feb 13, 2022 09:44:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@regression</span>
-		<span class='category label white-text'>@smoke1</span>
-	</div>
-	<span class='duration right label'>0h 0m 8s+807ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 19s+841ms</span>
 	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">User selects 2nd radio button</span>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">User checking amount as per city</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke1</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@EndtoEndTest</span>
+			</div>
 			
-			<b>Given</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Given User launch website "https://rahulshettyacademy.com/AutomationPractice/"</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">User checking amount as per city</span>
 			
+				<ul class='steps'>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User launch website "https://rahulshettyacademy.com/AutomationPractice/"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Navigate to table "Web Table Fixed header"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then fetch amount for "Kolkata" and print</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
-		<li test-id='4' class='node and pass' status='pass'>
+		<li test-id='7' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke1</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@EndtoEndTest</span>
+			</div>
 			
-			<b>And</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">And User clicks on "2"nd radio button</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">User checking amount as per city</span>
 			
+				<ul class='steps'>
+					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User launch website "https://rahulshettyacademy.com/AutomationPractice/"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Navigate to table "Web Table Fixed header"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then fetch amount for "Mumbai" and print</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
-		<li test-id='5' class='node then pass' status='pass'>
+		<li test-id='11' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke1</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@EndtoEndTest</span>
+			</div>
 			
-			<b>Then</b>
+			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Then radio button should be clicked</span>
-				<div class='pre'>passed</div>
+			<span class="bdd-step-name">User checking amount as per city</span>
 			
+				<ul class='steps'>
+					<li test-id='12' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User launch website "https://rahulshettyacademy.com/AutomationPractice/"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Navigate to table "Web Table Fixed header"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then fetch amount for "Delhi" and print</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
 		</li>
 	</ul>
 </div>
@@ -287,12 +337,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@EndtoEndTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -308,42 +358,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 13, 2022 06:28:10 PM</td>
+										<td>Feb 13, 2022 09:44:47 PM</td>
 										<td class='linked' test-id='1'>Verifying radio button selection and autosuggestion selection</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
+										<td>Feb 13, 2022 09:44:47 PM</td>
+										<td class='linked' test-id='3'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
-								</thead>
-								<tbody>
 									<tr>
-										<td>Feb 13, 2022 06:28:10 PM</td>
-										<td class='linked' test-id='2'>Verifying radio button selection and autosuggestion selection.User selects 2nd radio button</td>
+										<td>Feb 13, 2022 09:44:56 PM</td>
+										<td class='linked' test-id='7'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2022 09:45:02 PM</td>
+										<td class='linked' test-id='11'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -355,12 +386,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@smoke1</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -376,8 +407,62 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 13, 2022 06:28:10 PM</td>
-										<td class='linked' test-id='2'>Verifying radio button selection and autosuggestion selection.User selects 2nd radio button</td>
+										<td>Feb 13, 2022 09:44:47 PM</td>
+										<td class='linked' test-id='3'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2022 09:44:56 PM</td>
+										<td class='linked' test-id='7'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2022 09:45:02 PM</td>
+										<td class='linked' test-id='11'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@regression</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 13, 2022 09:44:47 PM</td>
+										<td class='linked' test-id='3'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2022 09:44:56 PM</td>
+										<td class='linked' test-id='7'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2022 09:45:02 PM</td>
+										<td class='linked' test-id='11'>Verifying radio button selection and autosuggestion selection.User checking amount as per city.User checking amount as per city</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -412,31 +497,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>9</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 13, 2022 06:28:10 PM</div>
+					<div class='panel-lead'>Feb 13, 2022 09:44:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 13, 2022 06:28:20 PM</div>
+			 		<div class='panel-lead'>Feb 13, 2022 09:45:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>9,826ms</div>
+					<div class='panel-lead'>20,973ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -452,19 +537,19 @@
 						</tr>
 						<tr>
 							<td>@EndtoEndTest</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@regression</td>
-							<td>1</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>@smoke1</td>
-							<td>1</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@regression</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -489,7 +574,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -498,7 +583,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 3,
+				passGrandChild: 9,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

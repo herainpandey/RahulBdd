@@ -8,8 +8,8 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "FeatureFile", monochrome = true, dryRun = true, glue="com.rahulshettyacademy.stepdefinition",strict = true,
-        tags = {"@smoke1"},
+@CucumberOptions(features = "FeatureFile", monochrome = true, dryRun = false, glue="com.rahulshettyacademy.stepdefinition",strict = true,
+        tags = {"@EndtoEndTest"},
         plugin = {"pretty:target/cucumber-pretty.txt",
                    "html:target/cucumber-report/",
                    "junit:target/cucumber-results.xml",

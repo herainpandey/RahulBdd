@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.389532">
-    <testcase classname="Verifying radio button selection and autosuggestion selection" name="User selects 2nd radio button" time="9.389532">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="20.366368">
+    <testcase classname="Verifying radio button selection and autosuggestion selection" name="User checking amount as per city" time="8.948706">
         <system-out>
             <![CDATA[Given User launch website "https://rahulshettyacademy.com/AutomationPractice/".passed
-And User clicks on "2"nd radio button.......................................passed
-Then radio button should be clicked.........................................passed
+And Navigate to table "Web Table Fixed header"..............................passed
+Then fetch amount for "Kolkata" and print...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verifying radio button selection and autosuggestion selection" name="User checking amount as per city 2" time="5.581273">
+        <system-out>
+            <![CDATA[Given User launch website "https://rahulshettyacademy.com/AutomationPractice/".passed
+And Navigate to table "Web Table Fixed header"..............................passed
+Then fetch amount for "Mumbai" and print....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Verifying radio button selection and autosuggestion selection" name="User checking amount as per city 3" time="5.836389">
+        <system-out>
+            <![CDATA[Given User launch website "https://rahulshettyacademy.com/AutomationPractice/".passed
+And Navigate to table "Web Table Fixed header"..............................passed
+Then fetch amount for "Delhi" and print.....................................passed
 ]]>
         </system-out>
     </testcase>
